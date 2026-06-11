@@ -1,0 +1,33 @@
+---
+interface Props {
+  href: string;
+  image: string;
+  category: string;
+  date: string;
+  title: string;
+  author: string;
+}
+const { href, image, category, date, title, author } = Astro.props;
+---
+<a aria-label={title} href={href} class="u-p-1-5-1 u-h-100 u-z-index-1 u-w-100 w-inline-block">
+  <div class="blog_featured-inner">
+    <div class="u-d-flex cc-horizontal cc-gap-16 cc-right-top">
+      <div class="u-d-flex cc-vertical">
+        <div class="eyebrow u-color-secondary-invert">{date}</div>
+      </div>
+    </div>
+    <div class="blog_item-type u-bg-secondary u-p-absolute">
+      <div class="eyebrow">{category}</div>
+    </div>
+    <div class="gap_1-0-75 u-d-flex cc-vertical cc-stretch-bottom">
+      <h3 class="h6 u-color-primary-invert">{title}</h3>
+      <div class="u-d-flex cc-horizontal cc-left-center cc-gap-8">
+        <div class="p-14 u-color-secondary-invert">{author}</div>
+      </div>
+    </div>
+  </div>
+</a>
+<div class="u-p-absolute cc-full u-h-100 u-overflow-clip">
+  <img src={image} loading="lazy" alt="" class="blog_item-image u-p-absolute cc-full u-h-100" />
+  <div class="blog_grid-background"></div>
+</div>

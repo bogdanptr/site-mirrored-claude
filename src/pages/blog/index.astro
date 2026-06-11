@@ -4,10 +4,14 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Nav from "../../components/sections/Nav.astro";
 import Footer from "../../components/sections/Footer.astro";
 import BlogCard from "../../components/ui/BlogCard.astro";
+import BlogFeaturedCard from "../../components/ui/BlogFeaturedCard.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
 );
+
+const featured = posts.slice(0, 4);
+const rest = posts.slice(4);
 ---
 <BaseLayout title="Blog | Giga Energy" description="News and insights from Giga Energy.">
   <Nav />
@@ -16,12 +20,29 @@ const posts = (await getCollection("blog")).sort(
       <div class="u-d-flex cc-vertical gap_4-2">
         <div class="row">
           <div class="col">
-            <h1 class="h3">Blog</h1>
+            <h1 class="h3">The Giga Blog.</h1>
+            <div class="p-18 u-color-secondary">For those building what's next.</div>
           </div>
+        </div>
+        <div class="blog_grid cc-featured">
+          {
+            featured.map((post) => (
+              <div class="blog_grid-item cc-featured u-p-relative">
+                <BlogFeaturedCard
+                  href={`/blog/${post.slug}`}
+                  image={post.data.image}
+                  category={post.data.category}
+                  date={post.data.date}
+                  title={post.data.title}
+                  author={post.data.author}
+                />
+              </div>
+            ))
+          }
         </div>
         <div class="blog_grid">
           {
-            posts.map((post) => (
+            rest.map((post) => (
               <div class="blog_grid-item">
                 <BlogCard
                   href={`/blog/${post.slug}`}
