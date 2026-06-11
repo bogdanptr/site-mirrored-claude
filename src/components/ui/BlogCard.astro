@@ -1,0 +1,35 @@
+---
+interface Props {
+  href: string;
+  image: string;
+  category: string;
+  date: string;
+  title: string;
+  author: string;
+  authorImage?: string;
+}
+
+const { href, image, category, date, title, author, authorImage = "/images/placeholder.svg" } = Astro.props;
+---
+<a href={href} class="u-d-flex cc-vertical gap_1-5-1 cc-left-top w-inline-block">
+  <div class="blog_item-image u-wedge-top-right u-p-relative u-overflow-none">
+    <img loading="lazy" src={image} alt="" class="u-h-100" />
+    <div class="blog_item-type u-bg-secondary u-p-absolute">
+      <div class="eyebrow">{category}</div>
+    </div>
+  </div>
+  <div class="u-d-flex cc-vertical cc-left-top">
+    <div class="eyebrow u-color-secondary">{date}</div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 82 18" fill="none" class="blog_date-stroke">
+      <g opacity="0.3">
+        <path d="M0.666016 17H62.666" stroke="currentColor"></path>
+        <path d="M80.666 1L64.666 17H62.666" stroke="currentColor"></path>
+      </g>
+    </svg>
+  </div>
+  <h3 class="h5">{title}</h3>
+  <div class="u-d-flex cc-horizontal cc-left-center cc-gap-8">
+    <img loading="lazy" src={authorImage} alt="" class="u-icon cc-24 u-circle" />
+    <div class="p-14 u-color-secondary">{author}</div>
+  </div>
+</a>

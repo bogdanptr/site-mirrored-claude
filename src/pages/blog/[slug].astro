@@ -1,0 +1,119 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Nav from "../../components/sections/Nav.astro";
+import Footer from "../../components/sections/Footer.astro";
+import BlogCard from "../../components/ui/BlogCard.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post, allPosts: posts },
+  }));
+}
+
+const { post, allPosts } = Astro.props;
+const { Content } = await post.render();
+const related = allPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
+---
+<BaseLayout title={`${post.data.title} | Giga Energy`} description={post.data.excerpt}>
+  <Nav />
+  <header>
+    <div class="section">
+      <div class="w-layout-blockcontainer container w-container">
+        <div class="row">
+          <div class="col">
+            <div class="u-d-flex cc-vertical cc-gap-16">
+              <h1 class="h3">{post.data.title}</h1>
+              <div class="u-d-flex cc-horizontal cc-left-center cc-gap-8">
+                <img src={post.data.authorImage} loading="lazy" alt="" class="u-icon cc-24 u-circle" />
+                <div class="p-14 u-color-secondary">{post.data.author}</div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-shrink col-sm-12 col-sm-first">
+            <div class="u-d-flex cc-horizontal cc-gap-16">
+              <div class="u-d-flex cc-vertical">
+                <div class="eyebrow u-color-secondary">{post.data.date}</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 106 18" fill="none" class="envelope cc-16">
+                  <g opacity="0.3">
+                    <path d="M0 17H87" stroke="currentColor"></path>
+                    <path d="M105 1L89 17H87" stroke="currentColor"></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section u-p-0">
+      <div class="a-parallax-container u-aspect-netflix">
+        <img src={post.data.image} loading="lazy" alt="" class="a-parallax-image" />
+        <div class="blog_item-type u-bg-secondary u-p-absolute">
+          <div class="eyebrow">{post.data.category}</div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="row row-right">
+        <div class="col col-lg-6 col-md-7 col-sm-12">
+          <article class="rich-text w-richtext">
+            <Content />
+          </article>
+        </div>
+        <div class="col col-lg-3 col-md-5 col-sm-12">
+          <aside class="post_sticky u-d-flex cc-vertical cc-gap-24">
+            <div class="post_cta-container u-p-2-1-5">
+              <div class="u-d-flex cc-vertical cc-gap-16">
+                <div class="u-d-flex cc-vertical cc-gap-16">
+                  <h2 class="h6">Get a Quote</h2>
+                  <p class="p-14">Provide us with your specific requirements to receive an immediate quote tailored to your needs.</p>
+                </div>
+                <div class="u-d-flex cc-vertical cc-gap-16">
+                  <a href="/build-a-quote" class="btn cc-small cc-light w-inline-block"><div>Build A Quote</div></a>
+                  <a href="/contact" class="btn cc-small cc-secondary w-inline-block"><div>Contact Sales</div></a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section u-pt-0">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="u-d-flex cc-vertical gap_4-2">
+        <div class="row">
+          <div class="col">
+            <h2 class="h3">Related Posts</h2>
+          </div>
+          <div class="col col-shrink col-sm-12">
+            <a href="/blog" class="btn cc-small cc-secondary cc-full w-inline-block"><div>View All</div></a>
+          </div>
+        </div>
+        <div class="blog_grid">
+          {
+            related.map((p) => (
+              <div class="blog_grid-item">
+                <BlogCard
+                  href={`/blog/${p.slug}`}
+                  image={p.data.image}
+                  category={p.data.category}
+                  date={p.data.date}
+                  title={p.data.title}
+                  author={p.data.author}
+                  authorImage={p.data.authorImage}
+                />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+  <Footer />
+</BaseLayout>
