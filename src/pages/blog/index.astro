@@ -1,18 +1,18 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Nav from "../../components/sections/Nav.astro";
 import Footer from "../../components/sections/Footer.astro";
 import BlogCard from "../../components/ui/BlogCard.astro";
 import BlogFeaturedCard from "../../components/ui/BlogFeaturedCard.astro";
+import { sanityClient } from "../../sanity/lib/client";
+import { allPostsQuery } from "../../sanity/lib/queries";
+import { formatDate } from "../../sanity/lib/format";
 
-const posts = (await getCollection("blog")).sort(
-  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
-);
+const posts = await sanityClient.fetch(allPostsQuery);
 
 const featured = posts.slice(0, 4);
 const rest = posts.slice(4);
-const categories = [...new Set(rest.map((post) => post.data.category))];
+const categories = [...new Set(rest.map((post) => post.category))];
 ---
 <BaseLayout title="Blog | Giga Energy" description="News and insights from Giga Energy.">
   <Nav />
@@ -29,11 +29,11 @@ const categories = [...new Set(rest.map((post) => post.data.category))];
               <div class="blog_grid-item cc-featured u-p-relative">
                 <BlogFeaturedCard
                   href={`/blog/${post.slug}`}
-                  image={post.data.image}
-                  category={post.data.category}
-                  date={post.data.date}
-                  title={post.data.title}
-                  author={post.data.author}
+                  image={post.image}
+                  category={post.category}
+                  date={formatDate(post.date)}
+                  title={post.title}
+                  author={post.author}
                 />
               </div>
             ))
@@ -57,15 +57,15 @@ const categories = [...new Set(rest.map((post) => post.data.category))];
         <div class="blog_grid" id="blog-grid">
           {
             rest.map((post) => (
-              <div class="blog_grid-item" data-category={post.data.category} data-title={post.data.title.toLowerCase()}>
+              <div class="blog_grid-item" data-category={post.category} data-title={post.title.toLowerCase()}>
                 <BlogCard
                   href={`/blog/${post.slug}`}
-                  image={post.data.image}
-                  category={post.data.category}
-                  date={post.data.date}
-                  title={post.data.title}
-                  author={post.data.author}
-                  authorImage={post.data.authorImage}
+                  image={post.image}
+                  category={post.category}
+                  date={formatDate(post.date)}
+                  title={post.title}
+                  author={post.author}
+                  authorImage={post.authorImage}
                 />
               </div>
             ))
