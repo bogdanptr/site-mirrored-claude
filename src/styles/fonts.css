@@ -1,0 +1,19 @@
+/* Self-hosted fonts (replaces Webflow CDN font-face declarations) */
+
+@font-face {
+  font-family: "Alliance No 2";
+  src: url("/fonts/Alliance No.2 Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alliance No 2";
+  src: url("/fonts/Alliance No.2 Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ABC ROM Mono / Helvetica Now Text replaced with Inter (free, self-hosted via @fontsource) */

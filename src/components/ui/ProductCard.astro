@@ -1,0 +1,37 @@
+---
+import Button from "./Button.astro";
+import ArrowIcon from "./ArrowIcon.astro";
+
+interface Props {
+  image: string;
+  imageAlt?: string;
+  title: string;
+  description: string;
+  ctaHref: string;
+  ctaLabel: string;
+  imageClass?: string;
+}
+
+const { image, imageAlt = "", title, description, ctaHref, ctaLabel, imageClass = "" } = Astro.props;
+---
+<div class="home_product-card u-aspect-square u-wedge-top-right u-p-relative u-p-2-1-5 u-d-flex cc-vertical a-parallax-container">
+  <div class="home_product-card_top">
+    <div class="u-d-flex cc-vertical cc-gap-8">
+      <slot name="stat" />
+    </div>
+  </div>
+  <div class="u-mt-auto">
+    <div class="gap_1-5-1 u-d-flex cc-vertical cc-left-top u-z-index-1">
+      <div class="u-d-flex cc-vertical cc-gap-12">
+        <h3 class="h6">{title}</h3>
+        <p class="p-14">{description}</p>
+      </div>
+      <Button href={ctaHref} variant="tertiary-light">
+        {ctaLabel}
+        <ArrowIcon />
+      </Button>
+    </div>
+  </div>
+  <img src={image} loading="lazy" alt={imageAlt} class={`product_lead-image u-p-absolute cc-full a-parallax-image ${imageClass}`.trim()} />
+  <div class="home_product-card_gradient"></div>
+</div>

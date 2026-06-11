@@ -1,0 +1,12 @@
+---
+interface Props {
+  class?: string;
+}
+const { class: className = "u-icon cc-24" } = Astro.props;
+---
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class={className}>
+  <g>
+    <rect x="0.5" y="0.5" width="23" height="23" stroke="currentColor"></rect>
+    <path d="M17 17L7 7H17V17Z" fill="currentColor" id="btn-arrow"></path>
+  </g>
+</svg>

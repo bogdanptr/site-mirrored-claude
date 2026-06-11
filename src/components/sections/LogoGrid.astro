@@ -1,0 +1,19 @@
+---
+import LogoGridItem from "../ui/LogoGridItem.astro";
+
+const logos = [
+  { src: "/images/67e590a4740b70d07f83bbf6_ardent-data-center.avif", alt: "Ardent Data Centers" },
+  { src: "/images/67e2b325a3a60d630205e7f6_coreweave.avif", alt: "CoreWeave" },
+  { src: "/images/67e218fe05ad9e1f3b2cf368_supermicro.png", alt: "Supermicro" },
+  { src: "/images/68a8fd29efc756a1be484793_cleanspark.avif", alt: "CleanSpark" },
+  { src: "/images/67e2b325ad92ed2723d4ae1c_soluna.avif", alt: "Soluna" },
+  { src: "/images/67e2b325012caf92993b95b7_blackcreek.avif", alt: "Black Creek" },
+  { src: "/images/6a10ba38fc8e79d0075cfc18_fluidstacklogo 1.svg", alt: "Fluidstack" },
+  { src: "/images/6a10ba382cc87537e68f514b_nexusdatacenters 1.svg", alt: "Nexus Data Centers" },
+];
+---
+<section class="section u-p-0">
+  <div class="logo_grid">
+    {logos.map((logo) => <LogoGridItem src={logo.src} alt={logo.alt} />)}
+  </div>
+</section>

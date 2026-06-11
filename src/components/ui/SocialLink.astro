@@ -1,0 +1,11 @@
+---
+interface Props {
+  href: string;
+  label: string;
+}
+const { href, label } = Astro.props;
+---
+<a href={href} target="_blank" class="footer_links w-inline-block">
+  <slot />
+  <div class="u-sr-only">{label}</div>
+</a>

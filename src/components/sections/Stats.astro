@@ -1,0 +1,51 @@
+---
+import StatItem from "../ui/StatItem.astro";
+
+const stats = [
+  { value: "6.5+", label: "Total GW" },
+  { value: "826+", label: "Switchboards sections" },
+  { value: "1406+", label: "Transformers Built" },
+  { value: "18", label: "Sites Operational" },
+];
+---
+<section class="section cc-brand">
+  <div class="w-layout-blockcontainer container u-z-index-1 w-container">
+    <div class="gap_4-2 u-d-flex cc-vertical">
+      <div class="row">
+        <div class="col col-lg-6 col-md-10 col-sm-12">
+          <div class="u-d-flex cc-vertical cc-left-top cc-gap-16">
+            <h2 class="eyebrow u-w-100 u-color-secondary">Speed doesn't take shortcuts.</h2>
+            <h3 class="h2 u-wrap-pretty">Powering hundreds of customer sites globally — the right way.</h3>
+          </div>
+        </div>
+      </div>
+      <div class="stats u-grid">
+        {stats.map((s) => <StatItem value={s.value} label={s.label} />)}
+      </div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 761 278" fill="none" class="home_stats-bg">
+    <g opacity="0.2" clip-path="url(#clip0_25034_3965)">
+      <path d="M752.597 -1014C1105.68 -1014 1461.36 -783.555 1461.36 -367.829C1461.36 47.8972 1105.68 278.344 752.597 278.344L-0.337646 278.344L-0.337758 -1013.99L752.597 -1013.99L752.597 -1014Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M751.794 -999.651C1097.17 -999.651 1444.58 -773.602 1444.58 -367.86C1444.58 37.881 1097.17 263.93 751.794 263.93L14.4082 263.93L14.4081 -999.658L751.794 -999.658L751.794 -999.651Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M750.985 -985.305C1088.65 -985.305 1427.79 -763.661 1427.79 -367.889C1427.79 27.8822 1088.65 249.526 750.985 249.526L29.155 249.526L29.1549 -985.305L750.985 -985.305Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M750.184 -970.957C1080.13 -970.957 1411.02 -753.711 1411.02 -367.917C1411.02 17.8778 1080.14 235.124 750.184 235.124L43.9034 235.124L43.9033 -970.95L750.184 -970.95L750.184 -970.957Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M749.381 -956.606C1071.62 -956.606 1394.25 -743.758 1394.25 -367.948C1394.25 7.86164 1071.62 220.71 749.381 220.71L58.6486 220.71L58.6485 -956.614L749.381 -956.614L749.381 -956.606Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M748.577 -942.26C1063.11 -942.26 1377.47 -733.818 1377.47 -367.977C1377.47 -2.13719 1063.11 206.305 748.578 206.305L73.4019 206.305L73.4018 -942.26L748.577 -942.26Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M747.775 -927.907C1054.59 -927.907 1360.7 -723.862 1360.7 -367.999C1360.7 -12.1362 1054.59 191.901 747.776 191.901L88.1487 191.901L88.1486 -927.907L747.775 -927.907Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M746.974 -913.563C1046.08 -913.563 1343.91 -713.917 1343.91 -368.038C1343.92 -22.1593 1046.08 177.495 746.974 177.495L102.903 177.495L102.903 -913.563L746.974 -913.563Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M746.164 -899.218C1037.56 -899.218 1327.13 -703.976 1327.13 -368.068C1327.13 -32.1586 1037.56 163.083 746.164 163.083L117.642 163.083L117.642 -899.218L746.164 -899.218Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M745.361 -884.864C1029.04 -884.864 1310.36 -694.021 1310.36 -368.089C1310.36 -42.1575 1029.04 148.678 745.361 148.678L132.388 148.678L132.388 -884.864L745.361 -884.864Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M744.558 -870.52C1020.53 -870.52 1293.58 -684.075 1293.58 -368.128C1293.58 -52.1807 1020.53 134.272 744.558 134.272L147.141 134.272L147.141 -870.52L744.558 -870.52Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M743.757 -856.165C1012.02 -856.165 1276.81 -674.125 1276.81 -368.148C1276.81 -62.1702 1012.02 119.87 743.757 119.87L161.889 119.87L161.889 -856.165L743.757 -856.165Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M742.955 -841.82C1003.5 -841.82 1260.03 -664.178 1260.03 -368.177C1260.03 -72.177 1003.5 105.458 742.955 105.458L176.636 105.458L176.636 -841.82L742.955 -841.82Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M742.152 -827.466C994.99 -827.466 1243.25 -654.23 1243.25 -368.207C1243.25 -67.5779 994.99 91.0532 742.152 91.0533L191.389 91.0533L191.389 -827.474L742.152 -827.474L742.152 -827.466Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M741.342 -813.122C986.469 -813.122 1226.47 -644.284 1226.47 -368.238C1226.47 -76.4644 986.469 76.647 741.342 76.647L206.129 76.6471L206.129 -813.122L741.342 -813.122Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M740.54 -798.777C977.956 -798.777 1209.7 -634.336 1209.7 -368.267C1209.7 -85.349 977.956 62.2427 740.54 62.2427L220.875 62.2428L220.875 -798.769L740.54 -798.769L740.54 -798.777Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M739.738 -784.424C969.442 -784.424 1192.92 -624.388 1192.92 -368.297C1192.92 -94.2265 969.442 47.8306 739.738 47.8306L235.63 47.8307L235.63 -784.431L739.738 -784.431L739.738 -784.424Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M738.935 -770.08C960.928 -770.08 1176.15 -614.443 1176.15 -368.328C1176.15 -103.113 960.928 33.4243 738.935 33.4244L250.375 33.4244L250.375 -770.08L738.935 -770.08Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M738.133 -755.726C952.414 -755.726 1159.37 -604.487 1159.37 -368.349C1159.37 -111.99 952.414 19.0279 738.133 19.0279L265.122 19.0279L265.122 -755.718L738.133 -755.719L738.133 -755.726Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+      <path d="M737.33 -741.381C943.901 -741.381 1142.59 -594.547 1142.59 -368.386C1142.59 -120.875 943.901 4.60793 737.33 4.60795L279.876 4.60799L279.876 -741.388L737.33 -741.388L737.33 -741.381Z" stroke="currentColor" stroke-linejoin="bevel"></path>
+    </g>
+  </svg>
+</section>

@@ -1,0 +1,33 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  imageWidth: string;
+}
+const { title, description, image, imageWidth } = Astro.props;
+---
+<div class="home_product-item">
+  <div data-ix-target="grow-card" class="home_grow-contents">
+    <div class="home_product-card u-d-flex cc-vertical a-parallax-container u-p-2-1-5 u-h-100">
+      <div class="u-mt-auto">
+        <div class="u-z-index-1">
+          <div class="u-d-flex cc-vertical cc-gap-12 u-w-100">
+            <h3 class="h6">{title}</h3>
+            <p class="p-14 u-clamp cc-2">{description}</p>
+          </div>
+          <div class="home_product-card_bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 327 18" fill="none" class="envelope cc-neg-16">
+              <path d="M326 17L309.994 0.999999L6.99382e-07 0.999986" stroke="currentColor" stroke-width="1" opacity="0.3"></path>
+            </svg>
+            <div class="u-d-flex cc-gap-12 u-text-wrap-none cc-md-wrap u-text-white">
+              <slot name="links" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <img width={imageWidth} src={image} alt="" loading="lazy" class="product_lead-image u-p-absolute cc-full a-parallax-image" />
+      <div class="home_product-card_gradient"></div>
+    </div>
+  </div>
+</div>

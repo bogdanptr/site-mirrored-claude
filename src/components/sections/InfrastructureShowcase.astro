@@ -1,0 +1,90 @@
+---
+import CheckListItem from "../ui/CheckListItem.astro";
+import ProductRowItem from "../ui/ProductRowItem.astro";
+import ProductRowLink from "../ui/ProductRowLink.astro";
+---
+<section class="section u-pb-0">
+  <div class="gap_4-2 u-d-flex cc-vertical">
+    <div class="w-layout-blockcontainer container u-z-index-1 w-container">
+      <div class="row row-bottom row-between">
+        <div class="col col-lg-7 col-md-10 col-sm-12">
+          <div class="u-d-flex cc-vertical cc-left-top cc-gap-20">
+            <div class="u-d-flex cc-horizontal cc-left-center cc-gap-16">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 32 32" fill="none" class="u-icon cc-32 u-color-brand">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 32 32" fill="none">
+                  <g clip-path="url(#clip0_3500_10419)">
+                    <path d="M20.9712 0H15.7148V15.7613H20.9712V0Z" fill="#004EEB"></path>
+                    <path d="M15.7148 21.0149V15.7598L0.000946045 15.7598V21.0149H15.7148Z" fill="#004EEB"></path>
+                    <path d="M11.0923 0H5.83594V5.9889H11.0923V0Z" fill="#004EEB"></path>
+                    <path d="M5.83648 5.99023H0V11.2453H5.83648V5.99023Z" fill="#004EEB"></path>
+                    <path d="M11.0923 5.99023H5.83594V11.2453H11.0923V5.99023Z" fill="#004EEB"></path>
+                    <path d="M30.9009 0H25.6445V25.6363H30.9009V0Z" fill="#004EEB"></path>
+                    <path d="M25.6484 30.8899V25.6348H0.00581932V30.8899H25.6484Z" fill="#004EEB"></path>
+                    <path d="M19.8622 22.116C21.0827 22.116 22.0721 21.1268 22.0721 19.9066C22.0721 18.6864 21.0827 17.6973 19.8622 17.6973C18.6417 17.6973 17.6523 18.6864 17.6523 19.9066C17.6523 21.1268 18.6417 22.116 19.8622 22.116Z" fill="#004EEB"></path>
+                    <path d="M29.7919 31.9988C31.0124 31.9988 32.0018 31.0096 32.0018 29.7894C32.0018 28.5692 31.0124 27.5801 29.7919 27.5801C28.5714 27.5801 27.582 28.5692 27.582 29.7894C27.582 31.0096 28.5714 31.9988 29.7919 31.9988Z" fill="#004EEB"></path>
+                  </g>
+                  <defs><clippath id="clip0_3500_10419"><rect width="32" height="32" fill="white"></rect></clippath></defs>
+                </svg>
+              </svg>
+              <h2 class="eyebrow u-w-100 u-color-secondary">INFRASTRUCTURE</h2>
+            </div>
+            <h2 class="h2">Custom AI energy infrastructure, delivered faster.</h2>
+            <p class="u-color-secondary">We've delivered more than 6.5 GW of transformers, switchboards, power, and cooling AI infrastructure built in Houston, TX and Long Beach, CA.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="u-d-flex cc-vertical cc-left-top cc-gap-20">
+            <div class="u-d-flex cc-vertical u-w-100">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 560 18" fill="none" opacity="0.3" class="envelope u-color-secondary">
+                <path d="M0 1.10205H541" stroke="currentColor"></path>
+                <path d="M559 17.1021L543 1.10205H541" stroke="currentColor"></path>
+              </svg>
+              <ul role="list" class="u-d-flex cc-vertical cc-list w-list-unstyled">
+                <CheckListItem>Fast lead times on in-stock inventory &amp; made-to-order options</CheckListItem>
+                <CheckListItem>Flexible engineering for custom projects</CheckListItem>
+                <CheckListItem class="u-wrap-pretty">Responsive US-based support &amp; service</CheckListItem>
+              </ul>
+              <div class="u-pb-2 u-show-sm"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container cc-full">
+      <div class="home_product-row">
+        <ProductRowItem
+          title="Transformers"
+          description="3-phase padmount and substation transformers. Shop in-stock inventory or get a quote for a custom build."
+          image="/images/6949e5b62b354f926b4a95ea_9b737b746b1202e054048370a4fee4db9015036c (1).avif"
+          imageWidth="2048"
+        >
+          <Fragment slot="links">
+            <ProductRowLink href="/3-phase-padmount-transformers">3-phase padmounts</ProductRowLink>
+            <ProductRowLink href="/substation-transformers">Substations</ProductRowLink>
+          </Fragment>
+        </ProductRowItem>
+        <ProductRowItem
+          title="AI Power and Cooling"
+          description="Whitespace, hydro-cooled AI compute modules that drop into data center halls."
+          image="/images/69cb41d24ebead77d3636308_AI pod drawing 1.avif"
+          imageWidth="1500"
+        >
+          <Fragment slot="links">
+            <ProductRowLink href="/contact">Giga Pod</ProductRowLink>
+          </Fragment>
+        </ProductRowItem>
+        <ProductRowItem
+          title="Power Distribution"
+          description="Highly customizable modular power distribution solutions built and delivered on fast turnarounds."
+          image="/images/6949e53e5e7b3d46ac0e7dfa_ae8426876990afb2766c53166d8baf832b89c9a4.avif"
+          imageWidth="1980"
+        >
+          <Fragment slot="links">
+            <ProductRowLink href="/ul-891-switchboards">UL891 Switchboards</ProductRowLink>
+          </Fragment>
+        </ProductRowItem>
+      </div>
+    </div>
+  </div>
+  <div class="home_transformers-bg"></div>
+</section>

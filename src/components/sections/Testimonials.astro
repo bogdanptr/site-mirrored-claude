@@ -1,0 +1,52 @@
+---
+import TestimonialCard from "../ui/TestimonialCard.astro";
+import SwiperArrow from "../ui/SwiperArrow.astro";
+
+const stories = [
+  {
+    title: "Publicly Traded AI Hyperscaler",
+    quote: "“Giga's 7-week turnaround and custom engineering allowed us to scale up GPUs quickly.”",
+    image: "/images/692646d687adbcaacae13ba7_7 (1).avif",
+    imageAlt: "a switchboard on a light background",
+  },
+  {
+    title: "Midwestern Data Center on a Tight Timeline",
+    quote: "\"The equipment not only arrived on the tight timeline, but we've been extremely satisfied with the quality since the site was energized.\"",
+    image: "/images/67f4a19c71717f352e12ce6d_1737059193933 1.avif",
+  },
+  {
+    title: "Data Center in Texas",
+    quote: "“Our electricians let us know multiple times how much they prefer the GIGA equipment to anything else they have installed. It's the best of any single piece of infrastructure we ordered.”",
+    image: "/images/69d4315a218da915d18ff172_dji_fly_20250105_191612_0066_1762807834004_photo.avif",
+  },
+];
+---
+<section products-section="" class="section">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="gap_4-2 u-d-flex cc-vertical">
+      <div class="row row-between row-bottom">
+        <div class="col">
+          <div class="u-d-flex cc-vertical cc-left-top cc-gap-20">
+            <h2 class="eyebrow u-color-secondary">customer stories</h2>
+            <h3 class="h2">Satisfied Customers Across the Country</h3>
+          </div>
+        </div>
+      </div>
+      <div class="u-d-flex cc-vertical cc-gap-24">
+        <div class="swiper cc-products w-dyn-list">
+          <div role="list" class="swiper-wrapper cc-products w-dyn-items">
+            {stories.map((s) => (
+              <TestimonialCard title={s.title} quote={s.quote} image={s.image} imageAlt={s.imageAlt} />
+            ))}
+          </div>
+        </div>
+        <div class="swiper-pagination cc-products">
+          <div class="u-d-flex cc-horizontal cc-gap-16">
+            <SwiperArrow direction="prev" />
+            <SwiperArrow direction="next" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

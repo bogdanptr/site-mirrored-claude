@@ -1,0 +1,10 @@
+---
+interface Props {
+  src: string;
+  alt?: string;
+}
+const { src, alt = "" } = Astro.props;
+---
+<div class="logo_grid-item">
+  <img src={src} loading="lazy" alt={alt} class="logo_grid-image" />
+</div>

@@ -1,0 +1,16 @@
+---
+interface Props {
+  value: string;
+  label: string;
+}
+const { value, label } = Astro.props;
+---
+<div class="gap_2-1 u-d-flex cc-vertical">
+  <h4 class="h1-xl"><span data-gsap="stats">{value}</span></h4>
+  <div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 327 18" fill="none" class="envelope u-color-secondary">
+      <path d="M326 17L309.994 0.999999L6.99382e-07 0.999986" stroke="currentColor" stroke-width="1" opacity="0.3"></path>
+    </svg>
+    <h5 class="eyebrow u-color-secondary">{label}</h5>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+---
+interface Props {
+  title: string;
+  quote: string;
+  image: string;
+  imageAlt?: string;
+}
+const { title, quote, image, imageAlt = "" } = Astro.props;
+---
+<div role="listitem" class="swiper-slide cc-case-studies w-dyn-item">
+  <div class="stories_card u-wedge-top-right">
+    <h4 class="h5 u-color-primary-invert u-z-index-2">{title}</h4>
+    <p class="u-color-secondary-invert u-z-index-2">{quote}</p>
+    <div class="stories_scrim cc-darker"></div>
+    <img loading="lazy" src={image} alt={imageAlt} class="u-p-absolute cc-full u-z-index-0 u-h-100" />
+  </div>
+</div>

@@ -1,0 +1,26 @@
+---
+interface Props {
+  href: string;
+  variant?: "stroke-small" | "stroke-small-white" | "stroke-white" | "white" | "tertiary" | "tertiary-light";
+  class?: string;
+}
+
+const { href, variant = "stroke-small", class: className = "" } = Astro.props;
+
+const variantClassMap: Record<string, string> = {
+  "stroke-small": "btn",
+  "stroke-small-white": "btn",
+  "stroke-white": "btn",
+  "white": "btn",
+  "tertiary": "btn cc-tertiary",
+  "tertiary-light": "btn cc-tertiary",
+};
+
+const dataAttr =
+  variant === "tertiary" || variant === "tertiary-light"
+    ? { "data-wf--tertiary--variant": variant === "tertiary-light" ? "light" : "base" }
+    : { "data-wf--button--variant": variant };
+---
+<a href={href} class={`${variantClassMap[variant]} ${className}`.trim()} {...dataAttr}>
+  <div class="u-d-flex cc-horizontal cc-center-center cc-gap-8"><slot /></div>
+</a>

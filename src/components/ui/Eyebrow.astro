@@ -1,0 +1,11 @@
+---
+interface Props {
+  color?: "default" | "secondary";
+  class?: string;
+}
+const { color = "default", class: className = "" } = Astro.props;
+const colorClass = color === "secondary" ? "u-color-secondary" : "";
+---
+<div class={`eyebrow ${colorClass} ${className}`.trim()}>
+  <slot />
+</div>

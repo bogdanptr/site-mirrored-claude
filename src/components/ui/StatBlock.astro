@@ -1,0 +1,20 @@
+---
+interface Props {
+  value: string;
+  suffix?: string;
+  label: string;
+}
+const { value, suffix, label } = Astro.props;
+---
+<div class="u-d-flex">
+  <div class="u-d-flex cc-vertical cc-gap-8">
+    <div class="h2">{value}{suffix && <Fragment set:html={suffix} />}</div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 560 18" fill="none" class="envelope cc-invert">
+      <g opacity="0.7">
+        <path d="M0 1.00061H541" stroke="#484848"></path>
+        <path d="M559 17.0006L543 1.00061H541" stroke="#484848"></path>
+      </g>
+    </svg>
+    <p class="eyebrow u-weight-extralight">{label}</p>
+  </div>
+</div>

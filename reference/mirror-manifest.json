@@ -1,0 +1,765 @@
+{
+  "page": "https://www.gigaenergy.com/",
+  "mirrored_at": "2026-06-11T08:34:10Z",
+  "authorization_context": "user states this is a site made by their own agency",
+  "allowed_external_hosts": [],
+  "summary": {
+    "downloaded": 1,
+    "failed": 0,
+    "skipped_external": 123,
+    "skipped_provider_assets": 15,
+    "skipped_other": 12
+  },
+  "downloaded": [
+    {
+      "url": "https://www.gigaenergy.com/",
+      "path": "index.html",
+      "bytes": 439231
+    }
+  ],
+  "failed": [],
+  "skipped_external": [
+    {
+      "url": "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+      "host": "ajax.googleapis.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://api.consentpro.com/v2/cdn/runtime/67e218fe05ad9e1f3b2cf2ab.js",
+      "host": "api.consentpro.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://api.hubapi.com/hs-script-loader-public/v2/config/pixels-and-events/json?portalId=22530825",
+      "host": "api.hubapi.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://aplo-evnt.com/api/v1/intent_pixel/can_track_visitor?x_app_id=68fa3f78385b7a0015291891",
+      "host": "aplo-evnt.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://aplo-evnt.com/api/v1/intent_pixel/track_request?app_id=68fa3f78385b7a0015291891",
+      "host": "aplo-evnt.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=zbah3d",
+      "host": "assets.apollo.io",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://bat.bing.com/action/0?ti=187230078&tm=gtm002&Ver=2&mid=3ac98ad6-4556-4929-89db-2bc0a47ba292&bo=2&sid=3ff2a4a0657011f194d2bd766afe7bce&vid=3ff2ba00657011f1adf6ef9a642b720e&vids=1&msclkid=N&pi=0&lg=en-US&sw=1440&sh=900&sc=24&nwd=1&tl=Giga%20Energy&p=https%3A%2F%2Fwww.gigaenergy.com%2F&r=&lt=1948&evt=pageLoad&sv=2&asc=G&cdb=AQAS&rn=879024",
+      "host": "bat.bing.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://bat.bing.com/bat.js",
+      "host": "bat.bing.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://bat.bing.com/p/action/187230078.js",
+      "host": "bat.bing.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/dist/index.css",
+      "host": "cdn.jsdelivr.net",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/web/file-uploader.min.js",
+      "host": "cdn.jsdelivr.net",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js",
+      "host": "cdn.jsdelivr.net",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js",
+      "host": "cdn.jsdelivr.net",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
+      "host": "cdn.jsdelivr.net",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6791443123095f88c85ad858/67c6189cf7dc75b98022431c_DrawSVGPlugin.min.txt",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab%2F685146e1d8a68f749232b664%2F69012f6a506967fd7ddb4183%2Fenablevisiblebuttons-0.0.7.js",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab%2F685146e1d8a68f749232b664%2F69012f6aa0b02c6d49ac0a20%2Fimportucanddefinelocales-1.1.1.js",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab%2F685146e1d8a68f749232b664%2F69012f6ad0c54041112bd6fe%2Fmetadatahandler-0.0.5.js",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab%2F685146e1d8a68f749232b664%2F69012f6b506967fd7ddb41c6%2Fenableuploadstateview-0.0.3.js",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab%2F685146e1d8a68f749232b664%2F693c6968a4c20960e00415d2%2Fcssimporter-0.1.0.js",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab%2F685146e1d8a68f749232b664%2F693c6969f6fc35d22767123a%2Femptyfieldsremoval-1.1.0.js",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/67e218fe05ad9e1f3b2cf2e3_alliance-no-2-regular.woff2",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/67e218fe05ad9e1f3b2cf2e6_HelveticaNowText-Regular.otf",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/67e218fe05ad9e1f3b2cf2e7_HelveticaNowText-Bold.otf",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/67e218fe05ad9e1f3b2cf2e8_ABCROMMono-Variable.ttf",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/67e218fe05ad9e1f3b2cf32e_cta-box.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/67e218fe05ad9e1f3b2cf368_supermicro.png",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/67e2b325012caf92993b95b7_blackcreek.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/67e2b325a3a60d630205e7f6_coreweave.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/67e2b325ad92ed2723d4ae1c_soluna.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/67e2b3ebbcb8e72e663263ce_Utility%20grid.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/67e590a4740b70d07f83bbf6_ardent-data-center.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/68a8fd29efc756a1be484793_cleanspark.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/6945b60a5ff6cbaa6e9c05d3_pcard1.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/69464bee414b9c714956592c_Giga.svg",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/6949e53e5e7b3d46ac0e7dfa_ae8426876990afb2766c53166d8baf832b89c9a4.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/6949e5b62b354f926b4a95ea_9b737b746b1202e054048370a4fee4db9015036c%20(1).avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/694aee2ea5cb32b7bc3d357a_powermarkets2x.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/6995efd6a1c16fe513010e78_1%20(1).avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/6995f452d831f588755ac4f4_man%20working%20on%20Giga%20factory%20yard-p-1080.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/6995f452d831f588755ac4f4_man%20working%20on%20Giga%20factory%20yard.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/69963c68fe11f2f390877b5a_PodInt_Revised.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/69c1cd7b742171680c7a7279_herovidcover.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/69cb41d24ebead77d3636308_AI%20pod%20drawing%201.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/6a10ba382cc87537e68f514b_nexusdatacenters%201.svg",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/6a10ba38fc8e79d0075cfc18_fluidstacklogo%201.svg",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/css/giga-energy-staging-priv-78e49735fd3642.shared.391f3d688.min.css",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/js/giga-energy-staging-priv-78e49735fd3642.7a2af9be.4cbc7adec4418fea.js",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/js/giga-energy-staging-priv-78e49735fd3642.schunk.36b8fb49256177c8.js",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2ab/js/giga-energy-staging-priv-78e49735fd3642.schunk.a8198df30ec6a29e.js",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/67f4a19c71717f352e12ce6d_1737059193933%201.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/692646d687adbcaacae13ba7_7%20(1).avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/694245d63221c8f898c21fe5_694245a2d6b3d7f09c94f967_stockton.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/694245d63221c8f898c21fe8_694245a2e70b928e2083426c_wallis.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/694245d63221c8f898c21feb_694245a23bfbfab8accf27bb_wildcat.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/694245d63221c8f898c21ff1_694245a2be43325fe08a800b_jimmy.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/694245d63221c8f898c21ff4_694245a2f45368b8b1c65ef3_manning.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/694245d63221c8f898c21ff7_694245a2a95e6319af800d49_mustang.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/69464bb2cfc877b82a41b5c3_Factory.svg",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/69464bbaa6bca65e5d69f9c5_office.svg",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/69464bbfcf448a0fd138ab67_project.svg",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/694b0e2f12d8031b17a5231c_housefactory.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/694b0e44c8b43286beb80e96_houstonoffice.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/694b0e5435f97a436cffd74e_longbeachfactory.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/694b0e654c4070dadb769976_sfoffice.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/694b0e96c732c53f0214fdef_macalester.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/69a25d6fb0ebeeac64f82b29_Brazoria-p-1600.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/69a25e774ba539f38b4f1380_Project%20Able.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/69a2602457cbfcc9141ad6b4_dji_fly_20260215_160812_0006_1771201328600_photo-p-1600.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/69d4315a218da915d18ff172_dji_fly_20250105_191612_0066_1762807834004_photo.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/6a073228c35ffee36c9587cb_3-Phase-Pad3.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/6a0e5b5115a7c3d231542f65_image%20(3).avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67e218fe05ad9e1f3b2cf2d2/6a1f3c0931b51ebdb35e9932_matthew-henry-yETqkLnhsUI-unsplash.avif",
+      "host": "cdn.prod.website-files.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.usefathom.com/?h=https%3A%2F%2Fwww.gigaenergy.com&p=%2F&r=&sid=OFFXLLYY&qs=%7B%7D&cid=8506170",
+      "host": "cdn.usefathom.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cdn.usefathom.com/script.js",
+      "host": "cdn.usefathom.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/g/8fc8ed1d8752/api.js",
+      "host": "challenges.cloudflare.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.6.0.min.js",
+      "host": "code.jquery.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "host": "connect.facebook.net",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/2655556774811367?v=2.9.337&r=stable&domain=www.gigaenergy.com&hme=a4ca9981c995923b5752040373feb3dd5ae6be6b3954c741d676eccf72e2f0a2&ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C281%2C297%2C215%2C204%2C62%2C205%2C203%2C300%2C291%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171",
+      "host": "connect.facebook.net",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=22530825&currentUrl=https%3A%2F%2Fwww.gigaenergy.com%2F",
+      "host": "cta-service-cms2.hubspot.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=67e218fe05ad9e1f3b2cf2ab",
+      "host": "d3e54v103j8qbb.cloudfront.net",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://e.clarity.ms/collect",
+      "host": "e.clarity.ms",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=22530825&utk=",
+      "host": "forms.hscollectedforms.net",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://gigaenergy-cdn.pages.dev/scripts/consent-privacy-links.min.js",
+      "host": "gigaenergy-cdn.pages.dev",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://gigaenergy-cdn.pages.dev/scripts/consent-scroll-lock.min.js",
+      "host": "gigaenergy-cdn.pages.dev",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://gigaenergy-cdn.pages.dev/scripts/cta-tracking.min.js",
+      "host": "gigaenergy-cdn.pages.dev",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://gigaenergy-cdn.pages.dev/scripts/msclkid-capture.min.js",
+      "host": "gigaenergy-cdn.pages.dev",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17065279530/?random=1781166820090&cv=11&fst=1781166820090&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6691v9219610031z89206725517za20gzb9206725517zd9206725517xec&gcd=13t3t3t2t5l1&dma_cps=a&dma=1&tag_exp=0~115616986~115938465~115938469~118131808&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.gigaenergy.com%2F&rcb=13&frm=0&tiba=Giga%20Energy&gdid=dZTQ1Zm&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=210603321.1781166821&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.3.1&uaw=0&_tu=CA&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+      "host": "googleads.g.doubleclick.net",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17065279530/?random=1781166821081&cv=11&fst=1781166821081&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6691v9219610031za20gzb9206725517zd9206725517xec&gcd=13t3t3t2t5l1&dma_cps=a&dma=1&tag_exp=0~115616986~115938465~115938469~118131808&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.gigaenergy.com%2F&rcb=13&frm=0&tiba=Giga%20Energy&did=dZTQ1Zm&gdid=dZTQ1Zm&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=210603321.1781166821&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.3.1&uaw=0&_tu=CA&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+      "host": "googleads.g.doubleclick.net",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://hubspotv2.use1-marketplace-1p-apps-prod-red.if.webflow.services/static/no-chatbot-or-tracking.js",
+      "host": "hubspotv2.use1-marketplace-1p-apps-prod-red.if.webflow.services",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1781166600000/22530825.js",
+      "host": "js.hs-analytics.net",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/22530825/banner.js",
+      "host": "js.hs-banner.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://js.hs-scripts.com/22530825.js",
+      "host": "js.hs-scripts.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://js.hsadspixel.net/pixels.js",
+      "host": "js.hsadspixel.net",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "host": "js.hscollectedforms.net",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://js.hubspot.com/web-interactives-embed.js",
+      "host": "js.hubspot.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://orion.bendingspoons.com/v3/identity/settings",
+      "host": "orion.bendingspoons.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://perf-na1.hsforms.com/embed/v3/counters.gif?key=config-loaded-success&value=1",
+      "host": "perf-na1.hsforms.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://px.ads.linkedin.com/attribution_trigger?pid=6982036&time=1781166820172&url=https%3A%2F%2Fwww.gigaenergy.com%2F&tm=gtmv2",
+      "host": "px.ads.linkedin.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "host": "px.ads.linkedin.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://px4.ads.linkedin.com/collect?v=2&fmt=js&pid=6982036&time=1781166820172&url=https%3A%2F%2Fwww.gigaenergy.com%2F&tm=gtmv2&e_ipv6=AQLw-rsRZsFGHAAAAZ610MxYzI6fO5hclg-bPgg-9eGKGDFQmx61TrHVzz4q0J5NM24sHek0Gyr7Er8BnDy1EsOtnlXusnARjg",
+      "host": "px4.ads.linkedin.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-KWNGJ75SMS&gtm=45je6691v880028812z89206725517za20gzb9206725517zd9206725517&_p=1781166819473&_gaz=1&gcs=G111&gcd=13t3t3t2t5l1&npa=0&dma_cps=a&dma=1&gdid=dZTQ1Zm&ecid=1528399685&_eu=AAAAAGAC&are=1&cid=403755483.1781166821&ec_mode=m&frm=0&pscdl=noapi&rcb=6&sr=1440x900&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.3.1&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=0~115938465~115938468&sid=1781166820&sct=1&seg=0&dl=https%3A%2F%2Fwww.gigaenergy.com%2F&dt=Giga%20Energy&_tu=CA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=2440",
+      "host": "region1.analytics.google.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-KWNGJ75SMS&gtm=45je6691v880028812za20gzb9206725517zd9206725517&_p=1781166819473&gcs=G111&gcd=13t3t3t2t5l1&npa=0&dma_cps=a&dma=1&gdid=dZTQ1Zm&ecid=1528399685&_eu=AEAAAGQC&ae=a&are=1&cid=403755483.1781166821&ec_mode=m&frm=0&pscdl=noapi&rcb=6&sr=1440x900&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.3.1&uaw=0&ul=en-us&gaf=2&_s=2&tag_exp=0~115938465~115938468&sid=1781166820&sct=1&seg=1&dl=https%3A%2F%2Fwww.gigaenergy.com%2F&dt=Giga%20Energy&_tu=CA&en=scroll&epn.percent_scrolled=90&_et=10918&tfd=13362",
+      "host": "region1.analytics.google.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://scripts.clarity.ms/0.8.65/clarity.js",
+      "host": "scripts.clarity.ms",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "host": "snap.licdn.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.old.min.js",
+      "host": "snap.licdn.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1440x900&cd=24-bit&cs=UTF-8&ln=en-us&bfp=56d6be5d9295375031675273bb476656&v=1.1&a=22530825&rcu=https%3A%2F%2Fwww.gigaenergy.com%2F&pu=https%3A%2F%2Fwww.gigaenergy.com%2F&t=Giga+Energy&cts=1781166820840&vi=48a7aa575353e84ea5fbc9b2826af694&nc=true&u=109315034.48a7aa575353e84ea5fbc9b2826af694.1781166820838.1781166820838.1781166820838.1&b=109315034.1.1781166820838&cc=15",
+      "host": "track.hubspot.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://unpkg.com/lenis@1.2.3/dist/lenis.min.js",
+      "host": "unpkg.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://www.clarity.ms/tag/tuwd8c4agd?ref=gtm",
+      "host": "www.clarity.ms",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=13&frm=0&auid=210603321.1781166821&dt=Giga%20Energy&en=page_view&dl=https%3A%2F%2Fwww.gigaenergy.com%2F&scrsrc=www.googletagmanager.com&rnd=1186944362.1781166821&navt=n&npa=0&did=dZTQ1Zm&gdid=dZTQ1Zm&_tu=CA&gtm=45be6691v9219610031za20gzb9206725517zd9206725517xec&gcs=G111&gcd=13t3t3t2t5l1&dma_cps=a&dma=1&tag_exp=0~115616986~115938465~115938469~118131808&apve=1&apvf=f&apvc=0&tids=AW-17065279530&tid=AW-17065279530&tft=1781166821340&tfd=2447",
+      "host": "www.google.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=13&frm=0&auid=210603321.1781166821&dt=Giga%20Energy&en=page_view&dl=https%3A%2F%2Fwww.gigaenergy.com%2F&scrsrc=www.googletagmanager.com&rnd=1186944362.1781166821&navt=n&npa=0&gdid=dZTQ1Zm&_tu=CA&gtm=45be6691v9219610031z89206725517za20gzb9206725517zd9206725517xec&gcs=G111&gcd=13t3t3t2t5l1&dma_cps=a&dma=1&tag_exp=0~115616986~115938465~115938469~118131808&apve=1&apvf=f&apvc=0&tids=AW-17065279530&tid=AW-17065279530&tft=1781166821340&tfd=2447",
+      "host": "www.google.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=2&frm=0&ae=g&auid=210603321.1781166821&dt=Giga%20Energy&en=page_view&dl=https%3A%2F%2Fwww.gigaenergy.com%2F&scrsrc=www.googletagmanager.com&rnd=1186944362.1781166821&navt=n&npa=0&ep.ads_data_redaction=0&gdid=dZTQ1Zm&_tu=CA&gtm=45He6691v9206725517za200zd9206725517xea&gcs=G111&gcd=13t3t3t2t5l1&dma_cps=a&dma=1&tag_exp=0~115938465~115938469~118131808&apve=1&apvf=f&apvc=1&tft=1781166821339&tfd=2447",
+      "host": "www.google.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://www.google.com/pagead/1p-user-list/17065279530/?random=1781166820090&cv=11&fst=1781164800000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6691v9219610031z89206725517za20gzb9206725517zd9206725517xec&gcd=13t3t3t2t5l1&dma_cps=a&dma=1&tag_exp=0~115616986~115938465~115938469~118131808&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.gigaenergy.com%2F&rcb=13&frm=0&tiba=Giga%20Energy&gdid=dZTQ1Zm&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=210603321.1781166821&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.3.1&uaw=0&_tu=CA&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQSXAARCiqBektZRub6kCD_ojDxDpzBfFnpdouRpS5MMBdf4jadR6y5HYM4bVhouk_S7q5Lj1L-yNPbkDSAfauStSqs0udtmWdmWFAHGnfJDvqM-6YBGrWU7FeIFq15&random=1015831903&rmt_tld=0&ipr=y",
+      "host": "www.google.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://www.google.com/pagead/1p-user-list/17065279530/?random=1781166821081&cv=11&fst=1781164800000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6691v9219610031za20gzb9206725517zd9206725517xec&gcd=13t3t3t2t5l1&dma_cps=a&dma=1&tag_exp=0~115616986~115938465~115938469~118131808&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.gigaenergy.com%2F&rcb=13&frm=0&tiba=Giga%20Energy&did=dZTQ1Zm&gdid=dZTQ1Zm&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=210603321.1781166821&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.3.1&uaw=0&_tu=CA&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQSXAARCiqBeTZfmIWrP94UNKcyVYfVzvIfjO4ZEgw7Ib3Aa7s9LiWrIGDwI_aekLlZA_NVug3s7rHoPA0REZmlbLMf1C1De7f-uONwUfOv64IY4T2x72n1G8VQXQkW&random=3423278819&rmt_tld=0&ipr=y",
+      "host": "www.google.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/17065279530/?random=1781166820090&cv=11&fst=1781166820090&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6691v9219610031z89206725517za20gzb9206725517zd9206725517xec&gcd=13t3t3t2t5l1&dma_cps=a&dma=1&tag_exp=0~115616986~115938465~115938469~118131808&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.gigaenergy.com%2F&rcb=13&frm=0&tiba=Giga%20Energy&gdid=dZTQ1Zm&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=210603321.1781166821&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.3.1&uaw=0&_tu=CA&data=event%3Dgtag.config&ept=68&gcp=5",
+      "host": "www.google.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/17065279530/?random=1781166821081&cv=11&fst=1781166821081&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6691v9219610031za20gzb9206725517zd9206725517xec&gcd=13t3t3t2t5l1&dma_cps=a&dma=1&tag_exp=0~115616986~115938465~115938469~118131808&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.gigaenergy.com%2F&rcb=13&frm=0&tiba=Giga%20Energy&did=dZTQ1Zm&gdid=dZTQ1Zm&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=210603321.1781166821&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.3.1&uaw=0&_tu=CA&data=event%3Dgtag.config&ept=68&gcp=5",
+      "host": "www.google.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://www.google.ro/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-KWNGJ75SMS&cid=403755483.1781166821&gtm=45je6691v880028812z89206725517za20gzb9206725517zd9206725517&rcb=6&aip=1&dma=1&dma_cps=a&gcs=G111&gcd=13t3t3t2t5l1&npa=0&frm=0&tag_exp=0~115938465~115938468&z=791543991",
+      "host": "www.google.ro",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://www.google.ro/pagead/1p-user-list/17065279530/?random=1781166820090&cv=11&fst=1781164800000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6691v9219610031z89206725517za20gzb9206725517zd9206725517xec&gcd=13t3t3t2t5l1&dma_cps=a&dma=1&tag_exp=0~115616986~115938465~115938469~118131808&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.gigaenergy.com%2F&rcb=13&frm=0&tiba=Giga%20Energy&gdid=dZTQ1Zm&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=210603321.1781166821&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.3.1&uaw=0&_tu=CA&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQSXAARCiqBektZRub6kCD_ojDxDpzBfFnpdouRpS5MMBdf4jadR6y5HYM4bVhouk_S7q5Lj1L-yNPbkDSAfauStSqs0udtmWdmWFAHGnfJDvqM-6YBGrWU7FeIFq15&random=1015831903&rmt_tld=1&ipr=y",
+      "host": "www.google.ro",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://www.google.ro/pagead/1p-user-list/17065279530/?random=1781166821081&cv=11&fst=1781164800000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6691v9219610031za20gzb9206725517zd9206725517xec&gcd=13t3t3t2t5l1&dma_cps=a&dma=1&tag_exp=0~115616986~115938465~115938469~118131808&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.gigaenergy.com%2F&rcb=13&frm=0&tiba=Giga%20Energy&did=dZTQ1Zm&gdid=dZTQ1Zm&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=210603321.1781166821&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.3.1&uaw=0&_tu=CA&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQSXAARCiqBeTZfmIWrP94UNKcyVYfVzvIfjO4ZEgw7Ib3Aa7s9LiWrIGDwI_aekLlZA_NVug3s7rHoPA0REZmlbLMf1C1De7f-uONwUfOv64IY4T2x72n1G8VQXQkW&random=3423278819&rmt_tld=1&ipr=y",
+      "host": "www.google.ro",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-17065279530",
+      "host": "www.googletagmanager.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-17065279530&cx=c&gtm=4e6691",
+      "host": "www.googletagmanager.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-KWNGJ75SMS&cx=c&gtm=4e6691",
+      "host": "www.googletagmanager.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PT38W9QJ",
+      "host": "www.googletagmanager.com",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    }
+  ],
+  "skipped_provider_assets": [
+    {
+      "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+      "provider": "Vimeo",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.58/css/player.css",
+      "provider": "Vimeo",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.58/js/player.module.js",
+      "provider": "Vimeo",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.58/js/vendor.module.js",
+      "provider": "Vimeo",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter:300,400,500,600,700%7CInter:300,400,500,600,700%7CInter:300,400,500,600,700%7CSpace+Grotesk:300,400,500,600,700",
+      "provider": "Google Fonts",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+      "provider": "Google Fonts",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4C_k3HqU.woff2",
+      "provider": "Google Fonts",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/2137431583-4cb4e04ca0be136d2b97f6589fe406a4c0439ec8e80bda70878e836be443d453-d?mw=2200&mh=922",
+      "provider": "Vimeo",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/2137431583-4cb4e04ca0be136d2b97f6589fe406a4c0439ec8e80bda70878e836be443d453-d?mw=80&q=85",
+      "provider": "Vimeo",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://player.vimeo.com/video/1176369681?h=265df9ec2d&background=1&muted=1&playsinline=1",
+      "provider": "Vimeo",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://vod-adaptive-ak.vimeocdn.com/exp=1781170419~acl=%2F736c0321-9405-4a9f-a04f-7caab4a44c91%2Fpsid%3Ddd407b4f0eb962b8d72a88820c753ca185bb77331781166819%2F%2A~hmac=f32a2fcd857e430dd1b617d9fb11e71f5fb868c40f15079a7500e66b583452bf/736c0321-9405-4a9f-a04f-7caab4a44c91/psid=dd407b4f0eb962b8d72a88820c753ca185bb77331781166819/v2/playlist/av/primary/prot/cXNyPTE/playlist.json?omit=av1-hevc&pathsig=8c953e4f~YDBqc4tnRF8nVof2Ebpzbi4dsJ77s83quo_L5dbAVfQ&qsr=1&r=dXM%3D&rh=2cIWza",
+      "provider": "Vimeo",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://vod-adaptive-ak.vimeocdn.com/exp=1781170419~acl=%2F736c0321-9405-4a9f-a04f-7caab4a44c91%2Fpsid%3Ddd407b4f0eb962b8d72a88820c753ca185bb77331781166819%2F%2A~hmac=f32a2fcd857e430dd1b617d9fb11e71f5fb868c40f15079a7500e66b583452bf/736c0321-9405-4a9f-a04f-7caab4a44c91/psid=dd407b4f0eb962b8d72a88820c753ca185bb77331781166819/v2/range/prot/cmFuZ2U9MTE4NTgyMzctMjEzMjEzNjM/avf/a08d861b-a334-42b3-8318-eb8bf5dc8a7d.mp4?pathsig=8c953e4f~Mwd3IYUZkLCeR-7AqmYG4TtWqpxooDwadQ08t7_vm5s&r=dXMtd2VzdDE%3D&range=11858237-21321363",
+      "provider": "Vimeo",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://vod-adaptive-ak.vimeocdn.com/exp=1781170419~acl=%2F736c0321-9405-4a9f-a04f-7caab4a44c91%2Fpsid%3Ddd407b4f0eb962b8d72a88820c753ca185bb77331781166819%2F%2A~hmac=f32a2fcd857e430dd1b617d9fb11e71f5fb868c40f15079a7500e66b583452bf/736c0321-9405-4a9f-a04f-7caab4a44c91/psid=dd407b4f0eb962b8d72a88820c753ca185bb77331781166819/v2/range/prot/cmFuZ2U9MjEzMjEzNjQtMzk5MzgwNzY/avf/a08d861b-a334-42b3-8318-eb8bf5dc8a7d.mp4?pathsig=8c953e4f~UFjUjoxX38svJ_6Mpggq5Rv_Ha-44RZ38bV986L-izQ&r=dXMtd2VzdDE%3D&range=21321364-39938076",
+      "provider": "Vimeo",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://vod-adaptive-ak.vimeocdn.com/exp=1781170419~acl=%2F736c0321-9405-4a9f-a04f-7caab4a44c91%2Fpsid%3Ddd407b4f0eb962b8d72a88820c753ca185bb77331781166819%2F%2A~hmac=f32a2fcd857e430dd1b617d9fb11e71f5fb868c40f15079a7500e66b583452bf/736c0321-9405-4a9f-a04f-7caab4a44c91/psid=dd407b4f0eb962b8d72a88820c753ca185bb77331781166819/v2/range/prot/cmFuZ2U9ODczLTExODU4MjM2/avf/a08d861b-a334-42b3-8318-eb8bf5dc8a7d.mp4?pathsig=8c953e4f~HRA2flzSSRLyx3xlnDJ80wPeANkUhRKm5ol8KxCQUMI&r=dXMtd2VzdDE%3D&range=873-11858236",
+      "provider": "Vimeo",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    },
+    {
+      "url": "https://vod-adaptive-ak.vimeocdn.com/exp=1781170419~acl=%2F736c0321-9405-4a9f-a04f-7caab4a44c91%2Fpsid%3Ddd407b4f0eb962b8d72a88820c753ca185bb77331781166819%2F%2A~hmac=f32a2fcd857e430dd1b617d9fb11e71f5fb868c40f15079a7500e66b583452bf/736c0321-9405-4a9f-a04f-7caab4a44c91/psid=dd407b4f0eb962b8d72a88820c753ca185bb77331781166819/v2/range/prot/cmFuZ2U9ODczLTM2ODMwNDc/avf/937010b6-88a0-41a5-be97-30bebd66db80.mp4?pathsig=8c953e4f~Q2jOAfaYQ4iUeaCMBIsaNSv2uLOz01WYbiK2VjkwQ-I&r=dXMtY2VudHJhbDE%3D&range=873-3683047",
+      "provider": "Vimeo",
+      "action": "classify: Embed / Kept External / User-Supplied / Recreated From Observation / Blocked"
+    }
+  ],
+  "skipped_other": [
+    {
+      "url": "https://arclight.vimeo.com/add/player-stats?beacon=1&session-id=dd407b4f0eb962b8d72a88820c753ca185bb77331781166819",
+      "reason": "non-asset request type"
+    },
+    {
+      "url": "https://bat.bing.com/actionp/0?ti=187230078&tm=gtm002&Ver=2&mid=3ac98ad6-4556-4929-89db-2bc0a47ba292&bo=1&evt=consent&src=default&cdb=AQAS&asc=G",
+      "reason": "non-asset request type"
+    },
+    {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/api.js",
+      "reason": "non-2xx at capture time (302)"
+    },
+    {
+      "url": "https://gigaenergy-cdn.pages.dev/consent-privacy-links.min.js",
+      "reason": "non-2xx at capture time (301)"
+    },
+    {
+      "url": "https://gigaenergy-cdn.pages.dev/consent-scroll-lock.min.js",
+      "reason": "non-2xx at capture time (301)"
+    },
+    {
+      "url": "https://gigaenergy-cdn.pages.dev/cta-tracking.min.js",
+      "reason": "non-2xx at capture time (301)"
+    },
+    {
+      "url": "https://gigaenergy-cdn.pages.dev/msclkid-capture.min.js",
+      "reason": "non-2xx at capture time (301)"
+    },
+    {
+      "url": "https://lensflare.vimeo.com/add/vimeo.play_video",
+      "reason": "non-asset request type"
+    },
+    {
+      "url": "https://lensflare.vimeo.com/add/vimeo.watch_video_heartbeat",
+      "reason": "non-asset request type"
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=6982036&time=1781166820172&url=https%3A%2F%2Fwww.gigaenergy.com%2F&tm=gtmv2",
+      "reason": "non-2xx at capture time (302)"
+    },
+    {
+      "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-KWNGJ75SMS&cid=403755483.1781166821&gtm=45je6691v880028812z89206725517za20gzb9206725517zd9206725517&rcb=6&aip=1&dma=1&dma_cps=a&gcs=G111&gcd=13t3t3t2t5l1&npa=0&frm=0&tag_exp=0~115938465~115938468",
+      "reason": "non-asset request type"
+    },
+    {
+      "url": "https://vimeo.com/ablincoln/vuid?pid=dd407b4f0eb962b8d72a88820c753ca185bb77331781166819",
+      "reason": "non-asset request type"
+    }
+  ]
+}

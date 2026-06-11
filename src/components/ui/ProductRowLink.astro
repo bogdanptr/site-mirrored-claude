@@ -1,0 +1,11 @@
+---
+import ArrowIcon from "./ArrowIcon.astro";
+interface Props {
+  href: string;
+}
+const { href } = Astro.props;
+---
+<a data-wf--tertiary--variant="light" href={href} class="btn cc-tertiary w-variant-7a136ce8-395e-faab-4b1b-04268ea18720 w-inline-block">
+  <div><slot /></div>
+  <ArrowIcon />
+</a>

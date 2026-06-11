@@ -1,0 +1,59 @@
+---
+import ProductCard from "../ui/ProductCard.astro";
+---
+<section class="section">
+  <div class="w-layout-blockcontainer container u-z-index-1 w-container">
+    <div class="gap_4-2 u-d-flex cc-vertical">
+      <div class="row row-bottom">
+        <div class="col col-lg-8 col-md-10 col-sm-12">
+          <div class="u-d-flex cc-vertical cc-left-top cc-gap-20">
+            <h2 class="h2">One partner from spec to site.</h2>
+            <p class="u-color-secondary">Giga integrates site origination, manufacturing, and development to build AI factories faster.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row u-theme-dark">
+        <div class="col col-lg-4 col-md-12">
+          <ProductCard
+            image="/images/6945b60a5ff6cbaa6e9c05d3_pcard1.avif"
+            title="Infrastructure Manufacturing"
+            description="Giga builds everything data centers need. U.S.-based factories powered by American engineering."
+            ctaHref="/industries/ai-infrastructure"
+            ctaLabel="Explore Manufacturing"
+          >
+            <div slot="stat" class="h5 u-line-height-1">6.5</div>
+            <p slot="stat" class="eyebrow">GW BUILT</p>
+          </ProductCard>
+        </div>
+        <div class="col col-lg-4 col-md-12">
+          <ProductCard
+            image="/images/6995f452d831f588755ac4f4_man working on Giga factory yard.avif"
+            imageAlt="a fully built Giga AI factory"
+            title="Site Origination"
+            description="We offer pre-permitted, powered land for data center builds by working closely with utility partners."
+            ctaHref="/site-origination-development"
+            ctaLabel="Research Origination"
+          >
+            <div slot="stat" class="eyebrow"><span class="h5 u-line-height-1">175+</span> MW deployed</div>
+            <p slot="stat" class="eyebrow"><span class="h5 u-line-height-1">500+</span><span> MW in pipeline</span></p>
+          </ProductCard>
+        </div>
+        <div class="col col-lg-4 col-md-12">
+          <ProductCard
+            image="/images/6995efd6a1c16fe513010e78_1 (1).avif"
+            imageAlt="A drone photo of a Giga Energy AI factory"
+            imageClass="cc-home-gps-adj"
+            title="Development and Operation"
+            description="With 200MW in operation and 500MW in progress, we are experienced data center developers and operators."
+            ctaHref="/industries/ai-infrastructure"
+            ctaLabel="See the Process"
+          >
+            <div slot="stat" class="eyebrow"><span class="h5 u-line-height-1">9</span></div>
+            <p slot="stat" class="eyebrow">month deployment timeline</p>
+          </ProductCard>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home_transformers-bg u-md-hide"></div>
+</section>
