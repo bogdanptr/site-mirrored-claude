@@ -4,25 +4,60 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Nav from "../../components/sections/Nav.astro";
 import Footer from "../../components/sections/Footer.astro";
 import BlogCard from "../../components/ui/BlogCard.astro";
+import BlogFeaturedCard from "../../components/ui/BlogFeaturedCard.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
 );
+
+const featured = posts.slice(0, 4);
+const rest = posts.slice(4);
+const categories = [...new Set(rest.map((post) => post.data.category))];
 ---
 <BaseLayout title="Blog | Giga Energy" description="News and insights from Giga Energy.">
   <Nav />
   <section class="section">
     <div class="w-layout-blockcontainer container w-container">
       <div class="u-d-flex cc-vertical gap_4-2">
-        <div class="row">
-          <div class="col">
-            <h1 class="h3">Blog</h1>
-          </div>
+        <div class="blog_hero" style="width:100%; padding-top:6.25rem; padding-bottom:3.75rem; display:flex; flex-direction:column; justify-content:center;">
+          <h1 class="h2">The Giga Blog.</h1>
+          <div class="p-18 u-color-secondary">For those building what's next.</div>
         </div>
-        <div class="blog_grid">
+        <div class="blog_grid cc-featured">
           {
-            posts.map((post) => (
-              <div class="blog_grid-item">
+            featured.map((post) => (
+              <div class="blog_grid-item cc-featured u-p-relative">
+                <BlogFeaturedCard
+                  href={`/blog/${post.slug}`}
+                  image={post.data.image}
+                  category={post.data.category}
+                  date={post.data.date}
+                  title={post.data.title}
+                  author={post.data.author}
+                />
+              </div>
+            ))
+          }
+        </div>
+        <div class="u-d-flex cc-horizontal cc-gap-16 cc-left-center" style="flex-wrap:wrap; gap:0.75rem;">
+          <input
+            type="text"
+            id="blog-search"
+            placeholder="Search Giga's Blog"
+            class="blog_search-input"
+            style="flex:1; min-width:200px; padding:0.75rem 1rem; border:1px solid #000; font-family:inherit; font-size:1rem; background:transparent;"
+          />
+          <button type="button" class="blog_filter-pill u-active" data-category="all" style="padding:0.75rem 1.25rem; border:1px solid #000; background:transparent; font-family:inherit; font-size:0.875rem; letter-spacing:0.05em; text-transform:uppercase; cursor:pointer; white-space:nowrap;">All</button>
+          {
+            categories.map((category) => (
+              <button type="button" class="blog_filter-pill" data-category={category} style="padding:0.75rem 1.25rem; border:1px solid #000; background:transparent; font-family:inherit; font-size:0.875rem; letter-spacing:0.05em; text-transform:uppercase; cursor:pointer; white-space:nowrap;">{category}</button>
+            ))
+          }
+        </div>
+        <div class="blog_grid" id="blog-grid">
+          {
+            rest.map((post) => (
+              <div class="blog_grid-item" data-category={post.data.category} data-title={post.data.title.toLowerCase()}>
                 <BlogCard
                   href={`/blog/${post.slug}`}
                   image={post.data.image}
@@ -36,8 +71,73 @@ const posts = (await getCollection("blog")).sort(
             ))
           }
         </div>
+        <div id="blog-no-results" style="display:none; align-self:stretch; width:100%; box-sizing:border-box; border:1px solid #000; padding:4rem 2rem; text-align:center; flex-direction:column; align-items:center;">
+          <p class="p-16">There are no available items<br />matching the current filters.</p>
+          <button type="button" id="blog-reset" style="margin-top:1.5rem; padding:0.75rem 1.25rem; border:1px solid #000; background:transparent; font-family:inherit; font-size:0.875rem; letter-spacing:0.05em; text-transform:uppercase; cursor:pointer;">Reset all</button>
+        </div>
       </div>
     </div>
   </section>
   <Footer />
 </BaseLayout>
+
+<style>
+  .blog_filter-pill {
+    font-size: 0.7rem !important;
+    transition: border-color .2s ease, background-color .2s ease, color .2s ease;
+  }
+  .blog_filter-pill:hover {
+    border-color: #2563eb !important;
+  }
+  .blog_filter-pill.u-active {
+    background: #000 !important;
+    color: #fff !important;
+    border-color: #000 !important;
+  }
+</style>
+
+<script>
+  const searchInput = document.getElementById("blog-search") as HTMLInputElement;
+  const pills = document.querySelectorAll<HTMLButtonElement>(".blog_filter-pill");
+  const items = document.querySelectorAll<HTMLElement>("#blog-grid .blog_grid-item");
+  const noResults = document.getElementById("blog-no-results");
+
+  let activeCategory = "all";
+
+  function applyFilters() {
+    const query = searchInput.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    items.forEach((item) => {
+      const matchesCategory =
+        activeCategory === "all" || item.dataset.category === activeCategory;
+      const matchesSearch = !query || item.dataset.title?.includes(query);
+      const visible = matchesCategory && matchesSearch;
+      item.style.display = visible ? "" : "none";
+      if (visible) visibleCount++;
+    });
+
+    if (noResults) {
+      noResults.style.display = visibleCount === 0 ? "flex" : "none";
+    }
+  }
+
+  pills.forEach((pill) => {
+    pill.addEventListener("click", () => {
+      pills.forEach((p) => p.classList.remove("u-active"));
+      pill.classList.add("u-active");
+      activeCategory = pill.dataset.category || "all";
+      applyFilters();
+    });
+  });
+
+  searchInput?.addEventListener("input", applyFilters);
+
+  document.getElementById("blog-reset")?.addEventListener("click", () => {
+    searchInput.value = "";
+    activeCategory = "all";
+    pills.forEach((p) => p.classList.remove("u-active"));
+    document.querySelector<HTMLButtonElement>('.blog_filter-pill[data-category="all"]')?.classList.add("u-active");
+    applyFilters();
+  });
+</script>
